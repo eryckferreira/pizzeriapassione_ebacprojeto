@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzeria Passione e Tradizione</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-site fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand" href="#home">
+        <img src="./img/logo curta.png" alt="Passione e Tradizione" style="height: 48px; width: auto;" />
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-4 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item">
+            <a class="btn-reserva-nav" href="#reserva">Reservar Mesa</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <p class="hero-label">Desde 1987 · Parma, Itália</p>
+      <h1 class="hero-title">
+        A arte da pizza<br><em>feita com alma</em>
+      </h1>
+      <p class="hero-sub">Ingredientes importados, forno a lenha, receitas que atravessam gerações.</p>
+      <div class="hero-actions">
+        <a href="#cardapio" class="btn-primary-site">Ver Cardápio</a>
+        <a href="#reserva" class="btn-outline-site">Reservar Mesa</a>
+      </div>
+    </div>
+
+    <!-- setas -->
+    <button class="hero-arrow hero-prev" aria-label="Anterior" type="button">&#10094;</button>
+    <button class="hero-arrow hero-next" aria-label="Próximo" type="button">&#10095;</button>
+
+    <!-- indicadores -->
+    <div class="hero-indicators" role="tablist" aria-label="Indicador de imagens">
+      <button class="hero-dot active" data-index="0" aria-label="Imagem 1" role="tab"></button>
+      <button class="hero-dot" data-index="1" aria-label="Imagem 2" role="tab"></button>
+      <button class="hero-dot" data-index="2" aria-label="Imagem 3" role="tab"></button>
+    </div>
+
+    <div class="hero-scroll"><span></span></div>
+  </section>
+
+
+  <!-- ══════════════ STRIP ══════════════ -->
+  <div class="strip">
+    <div class="container">
+      <div class="strip-inner">
+        <div class="strip-item"><i class="bi bi-fire"></i><span>Forno a lenha 400°C</span></div>
+        <div class="strip-divider"></div>
+        <div class="strip-item"><i class="bi bi-geo-alt"></i><span>A melhor da Italiano</span></div>
+        <div class="strip-divider"></div>
+        <div class="strip-item"><i class="bi bi-clock"></i><span>Aberto todos os dias</span></div>
+        <div class="strip-divider"></div>
+        <div class="strip-item"><i class="bi bi-star-fill"></i><span>+2.000 avaliações 5★</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ SOBRE ══════════════ -->
+  <section class="section-sobre" id="sobre">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="sobre-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Interior da pizzaria" class="sobre-img-main" />
+            <div class="sobre-img-badge">
+              <span class="badge-num">37</span>
+              <span class="badge-txt">anos de<br>tradição</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <p class="section-label">Nossa história</p>
+          <h2 class="section-title">Mais do que pizza.<br>É <em>memória afetiva.</em></h2>
+          <p class="sobre-text">Fundada em Nápoles em 1987 pela família Conti, a Passione e Tradizione traz ao Brasil a autenticidade da pizza napolitana: massa de longa fermentação, molho San Marzano e mussarela de búfala diretamente da Campânia.</p>
+          <p class="sobre-text">Cada pizza sai do nosso forno a lenha em menos de 90 segundos, com a crocância e o aroma que só ingredientes verdadeiros proporcionam.</p>
+          <div class="sobre-stats">
+            <div class="stat"><span class="stat-num">48</span><span class="stat-label">Sabores no cardápio</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Unidades em SP</span></div>
+            <div class="stat"><span class="stat-num">400°</span><span class="stat-label">Forno a lenha</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CARDÁPIO ══════════════ -->
+  <section class="section-cardapio" id="cardapio">
+    <div class="container">
+      <div class="section-header text-center">
+        <p class="section-label">Il menù</p>
+        <h2 class="section-title">Nosso Cardápio</h2>
+      </div>
+      <div class="cardapio-tabs">
+        <button class="ctab active" data-filter="all">Todos</button>
+        <button class="ctab" data-filter="classica">Clássicas</button>
+        <button class="ctab" data-filter="especial">Especiais</button>
+        <button class="ctab" data-filter="vegana">Veganas</button>
+      </div>
+      <div class="row g-4" id="pizzaGrid">
+
+        <div class="col-12 col-md-6 col-lg-4" data-cat="classica">
+          <div class="pizza-card">
+            <div class="pizza-img-wrap">
+              <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" alt="Margherita" />
+              <span class="pizza-badge">Clássica</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-header"><h5 class="pizza-name">Margherita</h5><span class="pizza-price">R$ 62</span></div>
+              <p class="pizza-desc">Molho San Marzano, mussarela de búfala, manjericão fresco e azeite extra virgem.</p>
+              <div class="pizza-footer"><span class="pizza-tag"><i class="bi bi-leaf"></i> Vegetariana</span><a href="#reserva" class="pizza-btn">Pedir</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4" data-cat="classica">
+          <div class="pizza-card">
+            <div class="pizza-img-wrap">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Quattro Formaggi" />
+              <span class="pizza-badge">Clássica</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-header"><h5 class="pizza-name">Quattro Formaggi</h5><span class="pizza-price">R$ 74</span></div>
+              <p class="pizza-desc">Gorgonzola, parmesão, mussarela e fontina sobre base de creme de alho.</p>
+              <div class="pizza-footer"><span class="pizza-tag"><i class="bi bi-star"></i> Favorita</span><a href="#reserva" class="pizza-btn">Pedir</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4" data-cat="especial">
+          <div class="pizza-card destaque">
+            <div class="pizza-img-wrap">
+              <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=600&q=80" alt="Tartufo Nero" />
+              <span class="pizza-badge gold">Chef's Choice</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-header"><h5 class="pizza-name">Tartufo Nero</h5><span class="pizza-price gold">R$ 118</span></div>
+              <p class="pizza-desc">Creme de trufa negra, cogumelos porcini, mussarela de búfala e lâminas de trufa fresca.</p>
+              <div class="pizza-footer"><span class="pizza-tag gold"><i class="bi bi-trophy"></i> Premium</span><a href="#reserva" class="pizza-btn">Pedir</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4" data-cat="especial">
+          <div class="pizza-card">
+            <div class="pizza-img-wrap">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80" alt="Diavola" />
+              <span class="pizza-badge">Especial</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-header"><h5 class="pizza-name">Diavola Picante</h5><span class="pizza-price">R$ 79</span></div>
+              <p class="pizza-desc">Salame calabrês, pimenta dedo-de-moça, molho picante caseiro e mussarela fior di latte.</p>
+              <div class="pizza-footer"><span class="pizza-tag"><i class="bi bi-fire"></i> Picante</span><a href="#reserva" class="pizza-btn">Pedir</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4" data-cat="vegana">
+          <div class="pizza-card">
+            <div class="pizza-img-wrap">
+              <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?w=600&q=80" alt="Ortolana" />
+              <span class="pizza-badge green">Vegana</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-header"><h5 class="pizza-name">Ortolana</h5><span class="pizza-price">R$ 68</span></div>
+              <p class="pizza-desc">Berinjela grelhada, abobrinha, pimentão assado, tomate-cereja e pesto de manjericão.</p>
+              <div class="pizza-footer"><span class="pizza-tag green"><i class="bi bi-leaf"></i> 100% Vegana</span><a href="#reserva" class="pizza-btn">Pedir</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4" data-cat="classica">
+          <div class="pizza-card">
+            <div class="pizza-img-wrap">
+              <img src="https://images.unsplash.com/photo-1548369937-47519962c11a?w=600&q=80" alt="Prosciutto e Rucola" />
+              <span class="pizza-badge">Clássica</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-header"><h5 class="pizza-name">Prosciutto e Rucola</h5><span class="pizza-price">R$ 86</span></div>
+              <p class="pizza-desc">Presunto de Parma 24 meses, rúcula fresca, parmesão em lascas e redução de balsâmico.</p>
+              <div class="pizza-footer"><span class="pizza-tag"><i class="bi bi-star"></i> Favorita</span><a href="#reserva" class="pizza-btn">Pedir</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  <!-- ══════════════ GALERIA ══════════════ -->
+  <section class="section-galeria" id="galeria">
+    <div class="container">
+      <div class="section-header text-center">
+        <p class="section-label">La galleria</p>
+        <h2 class="section-title">Nossa Galeria</h2>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item large">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80" alt="Ambiente" />
+          <div class="galeria-overlay"><span>Ambiente</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=600&q=80" alt="Forno" />
+          <div class="galeria-overlay"><span>Forno a Lenha</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" alt="Pizza" />
+          <div class="galeria-overlay"><span>Nossas Pizzas</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Mesa" />
+          <div class="galeria-overlay"><span>Experiência</span></div>
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=600&q=80" alt="Ingredientes" />
+          <div class="galeria-overlay"><span>Ingredientes</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ DEPOIMENTOS ══════════════ -->
+  <section class="section-depoimentos">
+    <div class="container">
+      <div class="section-header text-center">
+        <p class="section-label">O que dizem</p>
+        <h2 class="section-title">Avaliações</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="depo-card">
+            <div class="depo-stars">★★★★★</div>
+            <p class="depo-text">"A melhor pizza que já comi na Itália. A massa tem aquele sabor único que só a fermentação longa proporciona."</p>
+            <div class="depo-autor">
+              <div class="depo-avatar">LC</div>
+              <div><strong>Luísa Carvalho</strong><span>São Paulo, SP</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="depo-card featured">
+            <div class="depo-stars">★★★★★</div>
+            <p class="depo-text">"Ambiente sofisticado, atendimento impecável e a Tartufo Nero é um pecado delicioso. Voltarei sempre."</p>
+            <div class="depo-autor">
+              <div class="depo-avatar">RM</div>
+              <div><strong>Rafael Monteiro</strong><span>São Paulo, SP</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="depo-card">
+            <div class="depo-stars">★★★★★</div>
+            <p class="depo-text">"Trouxe minha família inteira. Todo mundo adorou, desde as crianças até meu sogro que mora na Itália!"</p>
+            <div class="depo-autor">
+              <div class="depo-avatar">AS</div>
+              <div><strong>Ana Souza</strong><span>Campinas, SP</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ RESERVA ══════════════ -->
+  <section class="section-reserva" id="reserva">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <p class="section-label">Faça sua reserva</p>
+          <h2 class="section-title">Reserve sua<br><em>mesa agora</em></h2>
+          <p class="reserva-sub">Garanta sua experiência napolitana. Atendemos de terça a domingo, das 18h às 23h30.</p>
+          <div class="reserva-info">
+            <div class="rinfo-item"><i class="bi bi-telephone"></i><span>(11) 3456-7890</span></div>
+            <div class="rinfo-item"><i class="bi bi-whatsapp"></i><span>(11) 99876-5432</span></div>
+            <div class="rinfo-item"><i class="bi bi-envelope"></i><span>reservas@passionetradizione.com.br</span></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form class="reserva-form" id="reservaForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label-site">Nome completo</label>
+                <input type="text" class="form-input-site" placeholder="Seu nome" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-site">Telefone / WhatsApp</label>
+                <input type="tel" class="form-input-site" placeholder="(11) 99999-9999" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-site">Data</label>
+                <input type="date" class="form-input-site" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-site">Horário</label>
+                <select class="form-input-site">
+                  <option value="">Selecione</option>
+                  <option>18:00</option><option>18:30</option><option>19:00</option>
+                  <option>19:30</option><option>20:00</option><option>20:30</option>
+                  <option>21:00</option><option>21:30</option><option>22:00</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-site">Número de pessoas</label>
+                <select class="form-input-site">
+                  <option>1 pessoa</option><option>2 pessoas</option><option>3 pessoas</option>
+                  <option>4 pessoas</option><option>5 pessoas</option><option>6+ pessoas</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-site">E-mail</label>
+                <input type="email" class="form-input-site" placeholder="seu@email.com" />
+              </div>
+              <div class="col-12">
+                <label class="form-label-site">Observações (opcional)</label>
+                <textarea class="form-input-site" rows="3" placeholder="Alergias, ocasião especial, preferências…"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-submit-site">
+                  Confirmar Reserva <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTATO ══════════════ -->
+  <section class="section-contato" id="contato">
+    <div class="container">
+      <div class="section-header text-center">
+        <p class="section-label">Nos encontre</p>
+        <h2 class="section-title">Localização & Contato</h2>
+      </div>
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5">
+          <div class="contato-box">
+            <h5 class="contato-titulo">Unidade Jardins</h5>
+            <ul class="contato-list">
+              <li><i class="bi bi-geo-alt-fill"></i> Via Savani, 18, 43126 Parma PR, Itália</li>
+              <li><i class="bi bi-clock-fill"></i> Seg–Sex: 19h–23h00 | Sáb–Dom: 12:00–15:00 e 19:00–23h30</li>
+              <li><i class="bi bi-telephone-fill"></i> (00) 00000-0000</li>
+              <li><i class="bi bi-whatsapp"></i> (00) 00000-0000</li>
+              <li><i class="bi bi-envelope-fill"></i> contato@passionetradizione.com.br</li>
+            </ul>
+            <div class="redes">
+              <p class="redes-label">Redes Sociais</p>
+              <div class="redes-icons">
+                <a href="https://www.instagram.com/pizzeria_passione_e_tradizione/" class="rede-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="rede-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="rede-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="#" class="rede-btn whatsapp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="mapa-wrap">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190293.123456789!2d10.3140699!3d44.8100208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47806b6a98e108dd%3A0xe785e4402e7335e6!2sPizzeria%20Passione%20E%20Tradizione!5e0!3m2!1spt-BR!2sbr!4v171234567890!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="405" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="footer-brand"><img src="./img/logo branco.png" alt="" height="100px" width="auto"></div>
+            <p class="footer-desc">Autenticidade napolitana no coração de Parma. Forno a lenha, ingredientes importados e receitas de família desde 1987.</p>
+            <div class="redes-icons mt-3">
+              <a href="#" class="rede-btn"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="rede-btn"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="rede-btn"><i class="bi bi-tiktok"></i></a>
+              <a href="#" class="rede-btn whatsapp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="footer-heading">Menu</h6>
+            <ul class="footer-links">
+              <li><a href="#home">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#cardapio">Cardápio</a></li>
+              <li><a href="#galeria">Galeria</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h6 class="footer-heading">Horários</h6>
+            <ul class="footer-links">
+              <li>Seg–Sex: 19h–23h00</li>
+              <li>Sábado: 12:00–15:00 e 19:00–23h30</li>
+              <li>Domingo: 19:00–23h30</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h6 class="footer-heading">Localização</h6>
+            <ul class="footer-links">
+              <li>Via Savani, 18</li>
+              <li>Parma, Itália – IT</li>
+              <li class="mt-2">(00) 00000-0000</li>
+              <li>(00) 00000-0000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Pizzeria Passione e Tradizione. Estudo de Bootstrap 5.</span>
+        <span>Feito por Eryck Ferreira</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5511998765432" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
