@@ -83,14 +83,6 @@ A proposta foi unir:
 
 ---
 
-## Preview
-
-<p align="center">
-  <img src="./img/pizzeria-passione-preview.png" alt="Preview do projeto" width="100%">
-</p>
-
----
-
 ## Objetivo Acadêmico
 
 Projeto desenvolvido como parte das atividades práticas da **EBAC (Escola Britânica de Artes Criativas e Tecnologia)**, com foco na aplicação de conceitos de desenvolvimento front-end, design de interfaces e responsividade.
