@@ -89,6 +89,14 @@ Projeto desenvolvido como parte das atividades práticas da **EBAC (Escola Brit�
 
 ---
 
+## Preview do Projeto
+
+Acesse a versão online do projeto:
+
+🔗 **[Pizzeria Passione](https://pizzeriapassione-ebacprojeto.vercel.app/)**
+
+---
+
 ## Autor
 
 **Eryck Ferreira**
